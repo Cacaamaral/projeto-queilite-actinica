@@ -1,0 +1,21 @@
+# --- BLOCO 1: DADOS CLINICOS SENSIVEIS ---
+# Impede o rastreamento de planilhas contendo informacoes reais dos pacientes
+*.csv
+*.xlsx
+*.xls
+
+# --- BLOCO 2: ARQUIVOS DE IMAGEM MEDICA ---
+# Bloqueia o upload da pasta inteira que contem as fotos clinicas
+fotos/
+*/fotos/
+
+# --- BLOCO 3: PESOS E TREINAMENTOS DA REDE NEURAL ---
+# Modelos PyTorch costumam ser pesados para o GitHub e sao gerados localmente
+*.pth
+*.pt
+
+# --- BLOCO 4: CACHE DO PYTHON E ARQUIVOS DO SISTEMA OPERACIONAL ---
+# Ignora arquivos temporarios gerados pela execucao dos scripts
+__pycache__/
+*.pyc
+.DS_Store
